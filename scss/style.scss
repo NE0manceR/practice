@@ -1,5 +1,6 @@
 @import './_variables';
 @import './_fonts';
+@import './_header';
 
 * {
     padding: 0;
@@ -57,4 +58,14 @@ li {
     color: $gray_main_color;
     font-size: 18px;
     line-height: 165.4%;
+}
+
+.container {
+    max-width: $content_width;
+    margin: 0 auto;
+
+    @media (max-width: 1400px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
