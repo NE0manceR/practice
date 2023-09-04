@@ -1,6 +1,8 @@
 @import './_variables';
 @import './_fonts';
 @import './_header';
+@import './_mobile-menu';
+@import './_home';
 
 * {
     padding: 0;
@@ -67,5 +69,42 @@ li {
     @media (max-width: 1400px) {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+.modal-bcg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    padding: 28px 39px;
+    margin-bottom: 23px;
+    color: $main_color;
+    font-size: 20px;
+    font-weight: 700;
+    width: max-content;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.yellow-btn {
+    background-color: $yellow_color;
+
+    &:hover {
+        border: 1px solid $main_color;
+        background-color: transparent;
+    }
+
+    &:active {
+        transform: scale(0.96, 0.96);
     }
 }

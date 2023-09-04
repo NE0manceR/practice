@@ -1,0 +1,29 @@
+.home {
+
+    &__main-section {
+        height: calc(100vh - 204px);
+        background: url('../images/home/main-section-bcg.png') no-repeat;
+        // background-size: cover;
+    }
+
+    &__main-content {
+        display: grid;
+        align-content: center;
+        height: 100%;
+
+        span {
+            color: #68A47F;
+            font-size: 36px;
+        }
+
+        h1 {
+            max-width: 530px;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__promotion {
+
+    }
+
+}

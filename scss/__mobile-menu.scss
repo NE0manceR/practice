@@ -1,0 +1,41 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: none;
+    width: 80vw;
+    height: 100vh;
+    background-color: $white_color;
+    
+
+    .nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        right: 20px;
+        top: 20px;
+    }
+
+    &.active {
+        animation: showMobile 0.5s forwards;
+    }
+
+    @keyframes showMobile {
+
+        100% {
+            left: 0;
+        }
+    }
+
+}
