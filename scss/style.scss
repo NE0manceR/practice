@@ -25,6 +25,10 @@ h6 {
 
 h1 {
     font-size: 70px;
+
+    @media (max-width: 520px) {
+        font-size: 40px;
+    }
 }
 
 h2 {
@@ -94,6 +98,11 @@ li {
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.3s;
+
+    @media (max-width: 520px) {
+        padding: 18px 29px;
+        font-size: 16px;
+    }
 }
 
 .yellow-btn {
