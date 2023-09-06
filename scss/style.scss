@@ -35,7 +35,6 @@ h2 {
     font-size: 50px;
 }
 
-
 h3 {
     font-size: 40px;
 }
@@ -111,6 +110,21 @@ li {
     &:hover {
         border: 1px solid $main_color;
         background-color: transparent;
+    }
+
+    &:active {
+        transform: scale(0.96, 0.96);
+    }
+}
+
+.blue-btn {
+    background-color: $main_color;
+    color: white;
+
+    &:hover {
+        border: 1px solid $main_color;
+        background-color: transparent;
+        color: $main_color;
     }
 
     &:active {
