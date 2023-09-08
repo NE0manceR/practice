@@ -199,6 +199,50 @@
         font-size: 15px;
         text-align: center;
     }
+
+    &__organic {
+        background-color: $main_color;
+        padding: 200px 0;
+
+        @media (max-width: 900px) {
+            padding: 50px 0;
+        }
+
+        .product-card {
+            background-color: white;
+        }
+    }
+
+    &__organic-text-wrap {
+
+        .green-text {
+            text-align: left;
+        }
+
+        h2 {
+            color: white;
+            margin: 0;
+        }
+
+
+    }
+
+    &__organic-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .btn.yellow-btn {
+            margin: 0;
+        }
+    }
 }
 
 
