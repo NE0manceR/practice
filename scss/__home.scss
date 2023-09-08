@@ -66,6 +66,22 @@
             padding: 50px 0 50px;
         }
     }
+
+    &__products {
+        padding: 188px 0;
+        text-align: center;
+
+        &>span:nth-child(1) {
+            display: block;
+            color: $green_color;
+            font-size: 36px;
+            margin-bottom: 14px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 
