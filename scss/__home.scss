@@ -71,16 +71,133 @@
         padding: 188px 0;
         text-align: center;
 
-        &>span:nth-child(1) {
-            display: block;
-            color: $green_color;
-            font-size: 36px;
-            margin-bottom: 14px;
-        }
-
         h2 {
             margin-bottom: 40px;
         }
+    }
+
+    &__feedback {
+        position: relative;
+        padding: 164px 0;
+        overflow: hidden;
+        background-color: #FCFCFC;
+
+        @media (max-width: 1400px) {
+            padding: 50px 20px;
+        }
+    }
+
+    &__feedback-bcg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @media (max-width: 1100px) {
+            opacity: 0.1;
+        }
+    }
+
+    &__feedback-wrap {
+        max-width: 1030px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__feedback-slider {
+        max-width: 780px;
+        height: 400px;
+        margin: 0 auto 100px;
+
+        @media (max-width: 700px) {
+            height: 500px;
+        }
+    }
+
+    &__feedback-slide {
+        .rang {
+            justify-content: center;
+
+            img {
+                width: 26px;
+            }
+        }
+    }
+
+    &__feedback-user {
+        display: block;
+        width: 115px;
+        height: 115px;
+        object-fit: cover;
+        margin: 0 auto 20px;
+    }
+
+    &__feedback-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 211px);
+        justify-content: center;
+        gap: 62px;
+        grid-auto-rows: 211px;
+
+        @media (max-width: 560px) {
+            grid-template-columns: repeat(2, 150px);
+            grid-auto-rows: 150px;
+
+        }
+
+        &>div {
+            border: 3px solid $green_color;
+            border-radius: 100%;
+            padding: 4px;
+
+            &>div {
+                display: grid;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                background-color: #F1F1F1;
+
+                h2 {
+                    margin-bottom: 0;
+
+                    @media (max-width: 560px) {
+                        font-size: 32px;
+                    }
+                }
+
+                p {
+                    @media (max-width: 560px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__feedback-decor {
+        width: 100%;
+        height: 1px;
+        background-color: #E0E0E0;
+        margin-bottom: 102px;
+    }
+
+    &__feedback-text,
+    &__feedback-user-name {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__feedback-user-type {
+        font-size: 15px;
+        text-align: center;
     }
 }
 
