@@ -306,6 +306,74 @@
         }
     }
 
+    &__organic-food {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 42px;
+        background-color: #F1F8F4;
+        padding: 187px 0;
+
+        @media (max-width: 873px) {
+            grid-template-columns: 1fr;
+            padding: 50px 0;
+        }
+
+        div {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: calc((100vw - 101px) / 3);
+            background: url('../images/home/organic_food/1.png') no-repeat;
+            background-size: 100% 100%;
+            transition: background 4s;
+
+            @media (max-width: 873px) {
+                background-size: cover;
+                height: 200px;
+            }
+
+            @media (min-width: 873px) {
+                &:hover {
+                    background-size: 120% 120%;
+                }
+            }
+
+            &:nth-child(2) {
+                background: url('../images/home/organic_food/2.png') no-repeat;
+                background-size: 100% 100%;
+
+                @media (max-width: 873px) {
+                    background-size: cover;
+                }
+
+                @media (min-width: 873px) {
+                    &:hover {
+                        background-size: 120% 120%;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background: url('../images/home/organic_food/3.png') no-repeat;
+                background-size: 100% 100%;
+
+                @media (max-width: 873px) {
+                    background-size: cover;
+                }
+
+                @media (min-width: 873px) {
+                    &:hover {
+                        background-size: 120% 120%;
+                    }
+                }
+            }
+
+            button {
+                margin-bottom: 0;
+            }
+        }
+    }
+
 
 }
 
