@@ -425,3 +425,66 @@ li {
         }
     }
 }
+
+.callback-form {
+    background: url('../images/callback-form/bcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 350px max-content;
+        align-items: center;
+        gap: 6px;
+        padding-top: 105px;
+        padding-bottom: 105px;
+
+        @media (max-width: 940px) {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        h2 {
+            max-width: 357px;
+            color: white;
+        }
+
+        input {
+            padding: 28px 22px;
+            border-radius: 16px;
+            background: #FFF;
+            border: none;
+            outline: none;
+            color: #646464;
+            font-size: 21px;
+            font-style: italic;
+            width: 100%;
+            border: 1px solid transparent;
+
+            &.error {
+                border-color: red;
+                color: red;
+            }
+
+            &::placeholder {
+                color: #ABABAB;
+            }
+
+            &:focus {
+                &::placeholder {
+                    opacity: 0;
+                }
+
+                border-color:$main_color ;
+            }
+        }
+
+        button {
+            margin-bottom: 0;
+
+            @media (max-width: 940px) {
+                width: 100%;
+            }
+        }
+    }
+}
