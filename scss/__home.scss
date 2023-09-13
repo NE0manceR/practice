@@ -374,6 +374,23 @@
         }
     }
 
+    &__weekly {
+        padding: 185px 0;
+
+        .section-header {
+
+            h2 {
+                color: $main_color;
+                max-width: 700px;
+            }
+
+            button {
+                margin: 0;
+            }
+        }
+
+    }
+
 
 }
 
