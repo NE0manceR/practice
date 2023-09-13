@@ -3,6 +3,7 @@
 @import './_header';
 @import './_mobile-menu';
 @import './_home';
+@import './_footer';
 
 * {
     padding: 0;
@@ -485,6 +486,32 @@ li {
             @media (max-width: 940px) {
                 width: 100%;
             }
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__img {
+        width: 36px;
+        height: 53px;
+        object-fit: cover;
+    }
+
+    &__text {
+        color: $main_color;
+        font-size: 38px;
+        font-weight: 700;
+
+        @media (max-width: 560px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 460px) {
+            font-size: 20px;
         }
     }
 }
